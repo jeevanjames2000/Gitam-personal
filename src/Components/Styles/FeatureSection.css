@@ -1,0 +1,121 @@
+/* Adjust styles as per your design needs */
+.features-section {
+    padding: 40px 0;
+  }
+  
+  .features-section .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure the form is above other content */
+  }
+  
+  .features-section .col-feature {
+    position: relative;
+    z-index: 2; /* Ensure the content is below the form */
+  }
+  
+  .features-section .form-wrap {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .features-section .form-wrap h6 {
+    margin-bottom: 20px;
+  }
+  
+  .features-section .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .features-section .neetcard {
+    margin-bottom: 10px;
+  }
+  
+  .features-section .text-danger {
+    color: red;
+  }
+  
+
+  .form-container {
+    width: 100%;
+  }
+  
+  .form-wrap {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 488px;
+    height: 50rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading-color {
+    color: #007367;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+  }
+  
+  .checkbox-label {
+    text-align: justify;
+    margin-left: 24px; /* Adjust as needed */
+  }
+  
+  .align-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .btn-lg {
+    font-size: 16px;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .cta-btn {
+    background-color: #007367;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #005c4e;
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      width: 100%;
+    }
+  }
+  
+
+  

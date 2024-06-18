@@ -1,0 +1,27 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start off screen */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Slide in when open */
+}
+
+.sidebar-nav {
+  margin-top: 50px; /* Adjust top margin based on your header height */
+}
+
+.sidebar-nav .nav-link {
+  padding: 10px 20px;
+  color: #333;
+}
+
+.sidebar-nav .nav-link:hover {
+  background-color: #f0f0f0;
+}

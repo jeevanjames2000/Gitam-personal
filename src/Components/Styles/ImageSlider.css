@@ -1,0 +1,45 @@
+.slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    flex: 0 0 auto; /* Fixing width prevents overlap */
+    transition: opacity 0.5s ease-in-out;
+    position: relative; /* Ensure each slide is positioned relative */
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+  
+  .dots-container {
+    position: absolute; /* Position dots absolutely within their container */
+    bottom: 10px; /* Adjust vertical position as needed */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #007367;
+  }
+  
