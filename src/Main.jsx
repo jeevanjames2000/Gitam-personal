@@ -7,6 +7,8 @@ import Highlights from "./Components/Highlights";
 import Admissions from "./Components/Admissions";
 import Eligibilty from "./Components/Eligibilty";
 import FeeStructure from "./Components/FeeStructure";
+import Merit from "./Components/Merit";
+import HowToChoose from "./Components/HowToChoose";
 
 export default function Main() {
   return (
@@ -33,6 +35,12 @@ export default function Main() {
         <Grid item xs={12}>
           <FeeStructure />
         </Grid>
+        <Grid item xs={12}>
+          <Merit />
+        </Grid>
+        {/* <Grid item xs={12}>
+          <HowToChoose />
+        </Grid> */}
       </Grid>
     </>
   );

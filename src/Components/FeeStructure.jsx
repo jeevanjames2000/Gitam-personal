@@ -8,7 +8,7 @@ const FeeStructure = () => {
         item
         xs={12}
         style={{
-          height: "783px",
+          height: "auto",
           width: "1920px",
           backgroundColor: "#F4E4C9",
           display: "flex",
@@ -44,7 +44,7 @@ const FeeStructure = () => {
             style={{
               width: "220px",
               height: "220px",
-              border: "2px solid #004740",
+              border: "2px solid #007367",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -80,7 +80,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -122,7 +122,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -164,7 +164,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -206,7 +206,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -248,7 +248,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -294,7 +294,7 @@ const FeeStructure = () => {
             style={{
               width: "220px",
               height: "220px",
-              border: "2px solid #004740",
+              border: "2px solid #007367",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -328,7 +328,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -370,7 +370,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -412,7 +412,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -454,7 +454,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -496,7 +496,7 @@ const FeeStructure = () => {
             style={{
               width: "172px",
               height: "172px",
-              border: "2px solid #004740",
+              border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
               justifyContent: "center",
@@ -527,10 +527,14 @@ const FeeStructure = () => {
           </div>
         </Grid>
         <Grid item container display={"flex"} justifyContent={"center"} xs={12}>
-          <Typography variant="body1" style={{ marginTop: "2rem" }}>
+          <Typography
+            variant="h6"
+            style={{ marginTop: "2rem", textAlign: "center" }}
+          >
             Note: *The candidate must pay the total 1st-year fee upon admission.
-            Starting from the 2nd year, following university rules, fee may be
-            paid in instalments upon request.
+            Starting from the 2nd year, following university rules,
+            <br />
+            fee may be paid in instalments upon request.
           </Typography>
         </Grid>
       </Grid>

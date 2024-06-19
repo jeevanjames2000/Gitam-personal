@@ -1,6 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-
 export default function Eligibility() {
   return (
     <>
@@ -21,7 +20,6 @@ export default function Eligibility() {
             />{" "}
           </div>
         </Grid>
-
         <Grid item xs={12} md={6}>
           <div style={{ padding: "2rem" }}>
             <Typography
