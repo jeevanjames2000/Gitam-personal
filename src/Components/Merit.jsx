@@ -11,6 +11,7 @@ const Merit = () => {
           display={"flex"}
           justifyContent={"center"}
           gap={4}
+          style={{ marginBottom: "4rem" }}
         >
           <Grid item container display={"flex"} justifyContent={"center"}>
             <Typography

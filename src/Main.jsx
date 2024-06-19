@@ -9,6 +9,7 @@ import Eligibilty from "./Components/Eligibilty";
 import FeeStructure from "./Components/FeeStructure";
 import Merit from "./Components/Merit";
 import HowToChoose from "./Components/HowToChoose";
+import Academics from "./Components/Academic";
 
 export default function Main() {
   return (
@@ -38,9 +39,12 @@ export default function Main() {
         <Grid item xs={12}>
           <Merit />
         </Grid>
-        {/* <Grid item xs={12}>
+        <Grid item xs={12}>
           <HowToChoose />
-        </Grid> */}
+        </Grid>
+        <Grid item xs={12}>
+          <Academics />
+        </Grid>
       </Grid>
     </>
   );
