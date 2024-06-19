@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-
 const AcademicCards = ({ image, text }) => {
   return (
     <Grid item xs={12} sm={12} md={12}>
@@ -37,7 +36,7 @@ const AcademicCards = ({ image, text }) => {
             borderRadius: "0 0 20px 20px",
             padding: "1rem",
             textAlign: "center",
-            height: "40px", // Adjust this value as needed for consistent text height
+            height: "40px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -63,5 +62,4 @@ const AcademicCards = ({ image, text }) => {
     </Grid>
   );
 };
-
 export default AcademicCards;

@@ -7,7 +7,7 @@ export default function Highlights() {
       <Grid
         container
         justifyContent="center"
-        style={{ padding: "2rem" }}
+        style={{ padding: "2rem", backgroundColor: "#DDD" }}
         spacing={2}
       >
         <Grid item xs={12} sm={6} md={4} lg={3}>

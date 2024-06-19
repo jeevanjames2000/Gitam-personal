@@ -13,7 +13,7 @@ const Academics = () => {
         container
         justifyContent="center"
         spacing={4}
-        style={{ backgroundColor: "#ffff" }}
+        style={{ backgroundColor: "#ffff", marginBottom: "2rem" }}
       >
         <Grid item xs={12}>
           <Typography
