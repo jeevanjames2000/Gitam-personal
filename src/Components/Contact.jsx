@@ -1,6 +1,5 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-
 const Contact = () => {
   return (
     <Grid
@@ -28,9 +27,9 @@ const Contact = () => {
         </Typography>
       </Grid>
       <Grid container justifyContent="center">
-        <Grid item xs={11} sm={10} md={8} lg={6} xl={5} container spacing={2}>
-          {/* First Column */}
-          <Grid item xs={12} sm={12} md={12} lg={3}>
+        <Grid item xs={11} sm={10} md={8} lg={10} xl={8} container spacing={2}>
+          {}
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
             <div
               style={{
                 display: "flex",
@@ -46,21 +45,24 @@ const Contact = () => {
               </Typography>
             </div>
           </Grid>
-
-          {/* Vertical Line */}
+          {}
           <Grid
             item
+            container
             xs={12}
             sm={1}
-            style={{ display: "flex", alignItems: "center" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <div
-              style={{ height: "100%", borderRight: "1px solid #ccc" }}
+              style={{ height: "100%", borderRight: "1px solid #A58255" }}
             ></div>
           </Grid>
-
-          {/* Second Column */}
-          <Grid item xs={12} sm={12} md={12} lg={3}>
+          {}
+          <Grid item xs={12} sm={12} md={12} xl={4} lg={4}>
             <div
               style={{
                 display: "flex",
@@ -76,21 +78,27 @@ const Contact = () => {
               </Typography>
             </div>
           </Grid>
-
-          {/* Vertical Line */}
+          {}
           <Grid
             item
             xs={12}
+            container
             sm={1}
-            style={{ display: "flex", alignItems: "center" }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
             <div
-              style={{ height: "100%", borderRight: "1px solid #ccc" }}
+              style={{
+                height: "100%",
+                borderRight: "1px solid #A58255",
+              }}
             ></div>
           </Grid>
-
-          {/* Third Column */}
-          <Grid item xs={12} sm={12} md={12} lg={3}>
+          {}
+          <Grid item xs={12} sm={12} md={12} lg={3} xl={3}>
             <div
               style={{
                 display: "flex",
@@ -111,5 +119,4 @@ const Contact = () => {
     </Grid>
   );
 };
-
 export default Contact;
