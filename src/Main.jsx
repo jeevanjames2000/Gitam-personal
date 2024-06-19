@@ -45,6 +45,8 @@ export default function Main() {
         <Grid item xs={12}>
           <Academics />
         </Grid>
+
+        <Grid item xs={12}></Grid>
       </Grid>
     </>
   );
