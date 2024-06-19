@@ -16,6 +16,7 @@ const FeeStructure = () => {
           alignItems: "center",
           justifyContent: "start",
           paddingTop: "3rem",
+          paddingBottom: "3rem",
         }}
       >
         <Typography
@@ -42,8 +43,8 @@ const FeeStructure = () => {
         >
           <div
             style={{
-              width: "220px",
-              height: "220px",
+              width: "200px",
+              height: "200px",
               border: "2px solid #007367",
               borderRadius: "50%",
               display: "flex",
@@ -78,8 +79,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -120,8 +121,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -162,8 +163,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -204,8 +205,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -246,8 +247,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -292,8 +293,8 @@ const FeeStructure = () => {
         >
           <div
             style={{
-              width: "220px",
-              height: "220px",
+              width: "200px",
+              height: "200px",
               border: "2px solid #007367",
               borderRadius: "50%",
               display: "flex",
@@ -326,8 +327,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -368,8 +369,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -410,8 +411,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -452,8 +453,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",
@@ -494,8 +495,8 @@ const FeeStructure = () => {
 
           <div
             style={{
-              width: "172px",
-              height: "172px",
+              width: "162px",
+              height: "162px",
               border: "2px solid #ffff",
               borderRadius: "50%",
               display: "flex",

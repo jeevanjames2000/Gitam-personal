@@ -9,7 +9,12 @@ const HowToChoose = () => {
         container
         justifyContent="center"
         spacing={4}
-        style={{ padding: "2rem", backgroundColor: "#007367" }}
+        style={{
+          marginTop: "1rem",
+          padding: "1rem",
+          marginBottom: "1rem",
+          backgroundColor: "#007367",
+        }}
       >
         <Grid item xs={12}>
           <Typography
