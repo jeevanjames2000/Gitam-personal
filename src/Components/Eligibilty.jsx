@@ -3,33 +3,43 @@ import React from "react";
 export default function Eligibility() {
   return (
     <>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} justifyContent="center">
+        {}
         <Grid
           item
           xs={12}
           md={6}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
+          display="flex"
+          justifyContent="end"
+          alignItems="center"
         >
-          <div style={{ width: "621px", height: "415px" }}>
+          <div style={{ maxWidth: "100%", height: "auto" }}>
             <img
               src="/Images/Frame 29.png"
               alt="Admission"
-              style={{ width: "100%", height: "357px", objectFit: "fill" }}
-            />{" "}
+              style={{ width: "100%", height: "auto", objectFit: "cover" }}
+            />
           </div>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <div style={{ padding: "2rem" }}>
+        {}
+        <Grid
+          item
+          xs={12}
+          md={6}
+          display="flex"
+          justifyContent="left"
+          alignItems={"center"}
+        >
+          <div style={{ maxWidth: "600px" }}>
             <Typography
               variant="h2"
               sx={{
                 color: "#007367",
                 fontWeight: 700,
-                fontSize: "32px",
+                fontSize: "28px",
                 lineHeight: "32px",
-                marginBottom: "1.5rem",
+                marginBottom: "1rem",
+                textAlign: "left",
               }}
             >
               Eligibility
@@ -40,7 +50,7 @@ export default function Eligibility() {
                 color: "#2D2D2D",
                 fontWeight: 400,
                 lineHeight: "24px",
-                textAlign: "justify",
+                textAlign: "left",
               }}
             >
               To be eligible for MBBS admission, candidates must be at least 17

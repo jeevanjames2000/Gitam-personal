@@ -36,6 +36,7 @@ const Footer = () => {
           item
           container
           xs={12}
+          
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}

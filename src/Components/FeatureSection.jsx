@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Styles/FeatureSection.css";
 import { Grid, TextField, Button, Typography } from "@mui/material";
-
 const FeaturesSection = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -13,7 +12,6 @@ const FeaturesSection = () => {
     score: "",
     checked: false,
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -21,80 +19,83 @@ const FeaturesSection = () => {
       [name]: value,
     }));
   };
-
   const handleCheckboxChange = (e) => {
     setFormData((prevData) => ({
       ...prevData,
       checked: e.target.checked,
     }));
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); 
+    console.log(formData);
   };
   return (
-    <section id="features2" className="features-section">
-      <div className="container">
-        <Grid
-          container
-          justifyContent="space-between"
-          // style={{ padding: "2rem" }}
-          alignItems="flex-end"
-        >
-          <Grid
-            container
-            justifyContent="space-between"
-            style={{ marginLeft: "2rem", marginRight: "2rem" }}
-            alignItems="flex-end"
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      style={{
+        minHeight: "100%",
+        backgroundColor: "#ffff",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+      }}
+    >
+      <Grid
+        container
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent="left"
+        alignItems="left"
+        spacing={2}
+        xs={12}
+        md={10}
+        lg={8}
+        style={{}}
+      >
+        <Grid item xs={6}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "#007367",
+              fontWeight: 700,
+              fontSize: "32px",
+              lineHeight: "32px",
+              marginBottom: "1.5rem",
+              textAlign: "left",
+            }}
           >
-            <Grid
-              item
-              xs={12}
-              md={12}
-              lg={7}
-              sx={{ columnPadding: true, mdPull: 5 }}
-            >
-              <Typography
-                variant="h2"
-                sx={{
-                  color: "#007367",
-                  fontWeight: 700,
-                  fontSize: "32px",
-                  lineHeight: "32px",
-                  marginBottom: "1.5rem",
-                }}
-              >
-                GITAM Institute of Medical Sciences and Research (GIMSR)
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "#2D2D2D",
-                  fontWeight: 400,
-                  lineHeight: "24px",
-                  textAlign: "justify",
-                }}
-              >
-                Discover GIMSR, your gateway to excellence in medical education!
-                Established in 2015, we are the first deemed medical college in
-                Andhra Pradesh, nestled alongside the picturesque GITAM (Deemed
-                to be University) campus in Visakhapatnam. With 600
-                undergraduate students and post-graduate programmes in 12
-                clinical and 2 para-Clinical disciplines, we offer top-notch
-                medical education, attracting students from all corners of India
-                and beyond. Our serene environment and modern amenities foster
-                the growth of outstanding medical professionals. Benefit from
-                strong academic and research linkages within GITAM Deemed to be
-                University, providing incredible opportunities for learning and
-                research. Explore our sprawling campus with state-of-the-art
-                facilities, including museums, libraries, and sports facilities.
-                Begin an exciting journey towards becoming an exceptional
-                medical professional at GIMSR!{" "}
-              </Typography>
-            </Grid>
-          </Grid>
-          {/* <Grid item container xs={6} style={{display:'flex', justifyContent:'center'}}  className="form-container">
+            GITAM Institute of Medical Sciences and Research (GIMSR)
+          </Typography>
+        </Grid>
+        <Grid item xs={6}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "#2D2D2D",
+              fontWeight: 400,
+              lineHeight: "24px",
+              textAlign: "left",
+            }}
+          >
+            Discover GIMSR, your gateway to excellence in medical education!
+            Established in 2015, we are the first deemed medical college in
+            Andhra Pradesh, nestled alongside the picturesque GITAM (Deemed to
+            be University) campus in Visakhapatnam. With 600 undergraduate
+            students and post-graduate programmes in 12 clinical and 2
+            para-Clinical disciplines, we offer top-notch medical education,
+            attracting students from all corners of India and beyond. Our serene
+            environment and modern amenities foster the growth of outstanding
+            medical professionals. Benefit from strong academic and research
+            linkages within GITAM Deemed to be University, providing incredible
+            opportunities for learning and research. Explore our sprawling
+            campus with state-of-the-art facilities, including museums,
+            libraries, and sports facilities. Begin an exciting journey towards
+            becoming an exceptional medical professional at GIMSR!
+          </Typography>
+        </Grid>
+      </Grid>
+      {/* <Grid item container xs={6} style={{display:'flex', justifyContent:'center'}}  className="form-container">
       <div className="form-wrap text-center details" id="form-area">
         <h6 className="heading-color">Download Brochure</h6>
         <form method="post" id="landing_form" noValidate="novalidate" onSubmit={handleSubmit}>
@@ -248,10 +249,7 @@ const FeaturesSection = () => {
         </form>
       </div>
     </Grid> */}
-        </Grid>
-      </div>
-    </section>
+    </Grid>
   );
 };
-
 export default FeaturesSection;

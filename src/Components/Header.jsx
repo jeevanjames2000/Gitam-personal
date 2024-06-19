@@ -17,9 +17,8 @@ const Header = () => {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
-            rowGap: "1rem",
+            // rowGap: "1rem",
             alignItems: "center",
-            padding: "1rem",
           }}
         >
           <Grid item xs={12} sm={6} display={"flex"} justifyContent={"center"}>
