@@ -5,19 +5,20 @@ export default function Eligibility() {
   return (
     <>
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
-          <div
-            style={{
-              padding: "2rem",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+        <Grid
+          item
+          xs={12}
+          md={6}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <div style={{ width: "621px", height: "415px" }}>
             <img
               src="/Images/Frame 29.png"
-              alt="eligibilty"
-              style={{ maxWidth: "100%", height: "auto", objectFit: "contain" }}
-            />
+              alt="Admission"
+              style={{ width: "650px", height: "357px", objectFit: "fill" }}
+            />{" "}
           </div>
         </Grid>
 

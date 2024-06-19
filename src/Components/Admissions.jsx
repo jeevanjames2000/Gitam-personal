@@ -56,14 +56,17 @@ export default function Admissions() {
           item
           xs={12}
           md={6}
+          display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <img
-            src="/Images/Frame 28.png"
-            alt="Admission"
-            style={{ width: "100%", height: "70%" }}
-          />{" "}
+          <div style={{ width: "621px", height: "415px" }}>
+            <img
+              src="/Images/Frame 28.png"
+              alt="Admission"
+              style={{ width: "650px", height: "357px" }}
+            />{" "}
+          </div>
         </Grid>
       </Grid>
     </>
