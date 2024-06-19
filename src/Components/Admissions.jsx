@@ -64,7 +64,7 @@ export default function Admissions() {
             <img
               src="/Images/Frame 28.png"
               alt="Admission"
-              style={{ width: "650px", height: "357px" }}
+              style={{ width: "100%", height: "357px" }}
             />{" "}
           </div>
         </Grid>

@@ -17,7 +17,7 @@ export default function Eligibility() {
             <img
               src="/Images/Frame 29.png"
               alt="Admission"
-              style={{ width: "650px", height: "357px", objectFit: "fill" }}
+              style={{ width: "100%", height: "357px", objectFit: "fill" }}
             />{" "}
           </div>
         </Grid>
