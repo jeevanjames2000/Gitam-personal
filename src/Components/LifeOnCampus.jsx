@@ -1,11 +1,9 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-
 const LifeonCampus = () => {
   const handleItemClick = (event) => {
     console.log("data");
   };
-
   return (
     <>
       <Grid
@@ -62,7 +60,7 @@ const LifeonCampus = () => {
                 top: "50%",
                 left: "50%",
                 transform: "translate(-50%, -50%)",
-                width: "80%", // Adjusted width for better responsiveness
+                width: "80%",
                 backgroundColor: "rgba(0, 0, 0, 0.5)",
                 borderRadius: "10px",
                 padding: "20px",
@@ -81,7 +79,7 @@ const LifeonCampus = () => {
                         color: "#fff",
                         fontSize: "1.5rem",
                         cursor: "pointer",
-                        textAlign: "center", // Center align text
+                        textAlign: "center",
                       }}
                       onClick={() => handleItemClick(item)}
                     >
@@ -97,5 +95,4 @@ const LifeonCampus = () => {
     </>
   );
 };
-
 export default LifeonCampus;
