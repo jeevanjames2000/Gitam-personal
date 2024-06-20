@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./Styles/FeatureSection.css";
-import { Grid, TextField, Button, Typography } from "@mui/material";
+import {
+  Grid,
+  TextField,
+  Button,
+  Typography,
+  FormControlLabel,
+  Checkbox,
+} from "@mui/material";
 const FeaturesSection = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -33,27 +40,23 @@ const FeaturesSection = () => {
     <Grid
       container
       justifyContent="center"
-      alignItems="center"
       style={{
-        minHeight: "100%",
+        // height: "auto",
         backgroundColor: "#ffff",
-        paddingTop: "4rem",
-        paddingBottom: "4rem",
       }}
     >
+      {}
       <Grid
+        item
         container
+        xs={10}
+        sm={8}
+        md={8}
+        alignItems="center"
         display={"flex"}
-        flexDirection={"column"}
-        justifyContent="left"
-        alignItems="left"
-        spacing={2}
-        xs={12}
-        md={10}
-        lg={8}
-        style={{}}
+        justifyContent={"start"}
       >
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6} style={{ paddingRight: "1rem" }}>
           <Typography
             variant="h2"
             sx={{
@@ -61,14 +64,12 @@ const FeaturesSection = () => {
               fontWeight: 700,
               fontSize: "32px",
               lineHeight: "32px",
-              marginBottom: "1.5rem",
               textAlign: "left",
+              marginBottom: "1rem",
             }}
           >
             GITAM Institute of Medical Sciences and Research (GIMSR)
           </Typography>
-        </Grid>
-        <Grid item xs={6}>
           <Typography
             variant="body1"
             sx={{
@@ -94,151 +95,252 @@ const FeaturesSection = () => {
             becoming an exceptional medical professional at GIMSR!
           </Typography>
         </Grid>
-      </Grid>
-      {/* <Grid item container xs={6} style={{display:'flex', justifyContent:'center'}}  className="form-container">
-      <div className="form-wrap text-center details" id="form-area">
-        <h6 className="heading-color">Download Brochure</h6>
-        <form method="post" id="landing_form" noValidate="novalidate" onSubmit={handleSubmit}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
+        {}
+        <Grid
+          item
+          container
+          xs={12}
+          md={6}
+          display="flex"
+          justifyContent="flex-end"
+          sx={{
+            border: "2px solid #ccc",
+            borderRadius: "20px",
+            padding: "2rem",
+            height: "auto",
+            backgroundColor: "#fff",
+            maxWidth: "100%",
+            position: "relative",
+            top: "40%",
+            transform: "translateY(-50%)",
+            zIndex: 1,
+          }}
+        >
+          <Grid item xs={12}>
+            <Typography
+              variant="h6"
+              style={{
+                textAlign: "center",
+                color: "#007367",
+                fontWeight: "700",
+                fontSize: "16px",
+                marginBottom: "1rem",
+              }}
+            >
+              Download Brochure
+            </Typography>
+            {}
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="name"
                 name="name"
-                label="Full Name*"
+                label="Full Name"
                 value={formData.name}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 50, pattern: "[A-Za-z ]{1,50}" }}
                 required
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="email"
                 name="email"
                 type="email"
-                label="Email*"
+                label="Email"
                 value={formData.email}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 50 }}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="phone"
                 name="phone"
-                label="Phone Number*"
+                label="Phone Number"
                 value={formData.phone}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 10, pattern: "[0-9]{10}" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="city"
                 name="city"
-                label="City*"
+                label="City"
                 value={formData.city}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 50, pattern: "[A-Za-z ]{1,50}" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="neet_roll"
                 name="neetRoll"
-                label="NEET Roll No*"
+                label="NEET Roll No"
                 value={formData.neetRoll}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 100, pattern: "[0-9]{1,100}" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="neet_rank"
                 name="neetRank"
-                label="NEET 2024 Rank*"
+                label="NEET 2024 Rank"
                 value={formData.neetRank}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 100, pattern: "[0-9]{1,100}" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 fullWidth
                 variant="outlined"
                 id="score"
                 name="score"
-                label="NEET Score*"
+                label="NEET Score"
                 value={formData.score}
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 onChange={handleChange}
-                InputLabelProps={{ shrink: true }}
-                inputProps={{ maxLength: 50, pattern: "[0-9]{1,50}" }}
                 required
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <TextField
                 type="file"
                 variant="outlined"
                 fullWidth
                 id="scorecard"
                 name="scorecard"
+                style={{ height: "34px", width: "480px", marginBottom: "1rem" }}
                 accept="image/png, image/jpeg, image/jpg, .pdf"
-                className="form-control"
               />
             </Grid>
-            <Grid item xs={12}>
-              <div className="form-group">
-                <div className="row align-checkbox">
-                  <div className="col-12 checkbox-label">
-                    <input
-                      type="checkbox"
-                      id="checking"
-                      name="checking"
-                      value="Yes"
-                      onChange={handleCheckboxChange}
-                    />
-                    <label htmlFor="checking">
-                      By clicking the ‘Submit' button, you consent to receive
-                      communication from us such as our newsletters, updates, new
-                      programme releases, etc via email, SMS, WhatsApp, and voice
-                      call. GITAM (Deemed to be University) is committed to
-                      protecting the privacy of the visitor and user's personal
-                      information. The information you provide will not be sold,
-                      rented, given away or traded to any third party not engaged
-                      by GITAM to perform authorized services. You may opt-out at
-                      any time.
-                    </label>
-                  </div>
-                </div>
-              </div>
+            <Grid
+              item
+              xs={12}
+              sx={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    id="checking"
+                    name="checking"
+                    value="Yes"
+                    onChange={handleCheckboxChange}
+                  />
+                }
+                style={{ textAlign: "justify", height: "auto", width: "480px" }}
+                label="By clicking the ‘Submit' button, you consent to receive communication from us such as our newsletters, updates, new programme releases, etc via email, SMS, WhatsApp, and voice call. GITAM (Deemed to be University) is committed to protecting the privacy of the visitor and user's personal information. The information you provide will not be sold, rented, given away or traded to any third party not engaged by GITAM to perform authorized services. You may opt-out at any time."
+              />
             </Grid>
-            <Grid item xs={12}>
+            <Grid
+              item
+              container
+              display={"flex"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              xs={12}
+              style={{
+                marginTop: "1rem",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Button
                 type="submit"
+                variant="contained"
+                color="primary"
+                sx={{
+                  backgroundColor: "#007367",
+                  color: "#ffff",
+                  width: "120px",
+                }}
                 className="cta-btn btn btn-lg btn-block"
                 id="submit_btn"
               >
@@ -246,9 +348,8 @@ const FeaturesSection = () => {
               </Button>
             </Grid>
           </Grid>
-        </form>
-      </div>
-    </Grid> */}
+        </Grid>
+      </Grid>
     </Grid>
   );
 };
